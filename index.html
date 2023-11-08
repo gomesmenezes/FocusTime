@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
+
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Temporizador Estilo Pomodoro">
   <title>Focus Time</title>
+  
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    <div class="timer">
+    <div id="timer">
 
       <span class="minutes">25</span>
       <span>:</span>
@@ -18,17 +23,17 @@
     
     </div>
 
-    <div class="controls">
-      <button id="play"> <img src="../assets/play.svg" alt="Botão play"></button>
-      <button id="pause"> <img src="../assets/pause-circle.svg" alt="Botão pause"> </button>
-      <button id="stop"> <img src="../assets/stop.svg" alt="Botão parar"></button>
-      <button id="set"> <img src="../assets/temp-central.svg" alt="Botão configurar"></button>
+    <div id="controls">
+      <button class="play"> <img src="../assets/play.svg" alt="Botão play"></button>
+      <button class="pause hide"> <img src="../assets/pause-circle.svg" alt="Botão pause"> </button>
+      <button class="stop hide"> <img src="../assets/stop.svg" alt="Botão parar"></button>
+      <button class="set"> <img src="../assets/temp-central.svg" alt="Botão configurar"></button>
     </div>
   </main>
 
   <footer>
-    <button id="sound-on"> <img src="../assets/volume-baixo.svg" alt="Botão volume"></button>
-    <button id="sound-off"> <img src="../assets/mute.svg" alt="Botão mutar"></button>
+    <button class="sound-on"> <img src="../assets/volume-baixo.svg" alt="Botão volume"></button>
+    <button class="sound-off hide> <img src="../assets/mute.svg" alt="Botão mutar"></button>
   </footer>
 
 </body>
